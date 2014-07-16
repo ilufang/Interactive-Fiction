@@ -7,13 +7,13 @@
 </head>
 
 <body>
-<div id="player_inventory">
+<!--div id="player_inventory">
   <span class="item-container"><h3>Inventory:</h3>
     <div class="inventory-box empty"></div>
     <div class="inventory-box empty"></div>
     <div class="inventory-box empty"></div>
   </span>
-</div>
+</div-->
 <div id="steps-taken">
   <h3>Steps Taken:</h3>
   <ul id='steps'>
@@ -21,28 +21,53 @@
 </div>
 
 <div id="impress">
-    <div id="slide1" class="step slide">
+    <div id="WorldWarII" class="step slide">
       <div class="slide-text">
-        <p>There's a time machine over there.  Flip the switch?</p>
-        <p><a href='#slide2'>FLIP</a> it.</p>
-        <p><a href='#slide3'>WAIT</a> for your dad, who is a scientist, to come home</p>
+        <p>
+		World War II
+		<br />
+		You are about to launch some missiles, HOWEVER, you need a machine to calculate. 
+		</p>
+        <p>There is a OLD machine, <a href='#end'>Use IT</a></p>
+		<p>Hold on!, take some time to <a href = '#create'>create a new one.</a></p>
         <div class="event-text"></div>
      </div>
-     <div class="menu item-container"><div class="inventory-box"><img src="bat.png" alt="bat" class="item" id="bat"></div></div>
+     <div class="menu item-container"><div class="inventory-box"></div></div>
     </div>
-    <div id="slide2" class="step slide" data-x="1500">
+    <div id="create" class="step slide" data-x="1500">
       <div class="slide-text">
-        <p>Woah.  A dinosaur.  I wonder if you can hit it with something...</p>
+        <p>The functions of the old ones are just too limited... Let's enable some custom code...</p>
+		<p>The revolutionary innovation of storing programs in memory replaced the switches and wiring with readily changed software.</p>
+		<p><a href = "#devevloping">Keep Working</a></p>
         <div class="event-text"></div>
       </div>
-      <div class="menu"><div class="inventory-box"><img src="dino.png" alt="dino" class="item" id="dino"></div></div>
+      <div class="menu"><div class="inventory-box"></div></div>
     </div>
-    <div id="slide3" class="step slide" data-x="-1500">
-      <div class="slide-text">
-        <p>You hung around for a while, and then your dad came home.</p>
-        <p>Then he helped you with your homework.</p>
-        <p>It was kind of fun, but not that much fun.</p>
+	<div id="developing" class="step slide" data-x="1500">
+      <div class="slide-text" style = "background-image:url('eniac.jpg');color:#ffffff">
+		<p>
+		The result was ENIAC, the first large-scale computer to run at electronic speed without being slowed by any mechanical parts. For a decade, until a 1955 lightning strike, ENIAC may have run more calculations than all mankind had done up to that point.</p>
+		</p>
         <div class="event-text"></div>
+      </div>
+      <div class="menu"><div class="inventory-box"><a href = "#inside"><img src = "tools.png" /></a></div></div>
+    </div>	
+	<div id="inside" class="step slide" data-x="1500">
+      <div class="slide-text" style = "">
+		<p>
+		The result was ENIAC, the first large-scale computer to run at electronic speed without being slowed by any mechanical parts. For a decade, until a 1955 lightning strike, ENIAC may have run more calculations than all mankind had done up to that point.</p>
+		</p>
+        <div class="event-text"></div>
+      </div>
+      <div class="menu"><div class="inventory-box"><a href = "#inside"><img src = "tools.png" /></a></div></div>
+    </div>
+    <div id="end" class="step slide" data-x="-1500">
+      <div class="slide-text" style = "color:white;background-image:url('old_machine.jpg');">
+        <p>Setting up the machine....... So tiring.</p>
+        <p>......</p>
+        <p>Finally it is over!!! What? Someone launched tens of that at the same time!!! How did they managed to calculate that!!!</p>
+        
+		<div class="event-text"></div>
       </div>
       <div class="menu"><a href="#" onclick='location = window.location.pathname; return false;'>START OVER</a></div>
       </div>
